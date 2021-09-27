@@ -1,38 +1,68 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h3, p {
+  padding: 1%;
+  font-size: 14px;
+}
+
+.app {
+  display:flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 800px;
+}
+
+.container {
+  display:flex;
+  flex: 3;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.btn, .counter, .link {
+  /* border: 1px solid lightgrey; */
+  padding: 1%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-counter, button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 12px;
+  border-radius: 12px;
+  border: 1px solid blue;
+  background-color: navy;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button a {
+  text-decoration: none;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  color: navy;
+  font-size: 12px;
+  padding: 10px;
+}
+
+footer p {
+  font-size: 12px;
 }
